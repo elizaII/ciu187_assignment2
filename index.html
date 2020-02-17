@@ -23,23 +23,44 @@
         cid: tuyen, kevinbr, emiljos, paumat, rezaee, marwalla
       </p>
     </div>
-
-    <div id="max-width">
-      <h2 class="center">Waste composition per country (%)</h2>
-      <p class="center">
-        Source:
-        <a
-          href="https://datacatalog.worldbank.org/dataset/what-waste-global-database"
-          target="_blank"
-          rel="noreferrer nooponer"
-          >https://datacatalog.worldbank.org/dataset/what-waste-global-database</a
-        >
-      </p>
-      <ul id="data1_legends" class="legends"></ul>
-      <div id="data1_chart" class="chart"></div>
+    <div class="flex cols-2 max-width">
+      <div class="what-a-waste flex-align-end padding-bottom">
+        <div class="mountains"></div>
+        <h1 class="section-title">
+          What a Waste.
+        </h1>
+        <p>
+          We consume more now than ever, but do we obtain the products' full
+          worth? Are they sustainable? When we want an egregious amount more
+          than what we actually need, we end up throwing away resources that may
+          never end up recycled. Instead, they are stashed and hidden away in
+          landfills. These landfills, that might as well be mountains, grow
+          bigger by the second and will one day shadow everything.
+        </p>
+        <p>
+          Source:
+          <a
+            href="https://datacatalog.worldbank.org/dataset/what-waste-global-database"
+            target="_blank"
+            rel="noreferrer nooponer"
+            >https://datacatalog.worldbank.org/dataset/what-waste-global-database</a
+          >
+        </p>
+        <div class="flex filter-container">
+          <button class="filter-button active">Show all</button>
+          <button class="filter-button">Show Europe</button>
+          <button class="filter-button">Show Asia</button>
+          <button class="filter-button">Show North America</button>
+        </div>
+      </div>
+      <div>
+        <h3 class="center subtitle">Waste composition per country (%)</h3>
+        <ul id="data1_legends" class="legends"></ul>
+        <div id="data1_chart" class="chart"></div>
+      </div>
     </div>
 
-    <div class="max-width">
+    <div class="max-width alabama-section">
       <h2 class="center">
         Marriage rate in Alabama and whole milk consumption
       </h2>

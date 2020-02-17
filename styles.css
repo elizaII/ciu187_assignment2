@@ -4,8 +4,27 @@ body {
   padding-bottom: 10rem;
 }
 
+p {
+  line-height: 1.5;
+}
+
+.what-a-waste {
+  position: relative;
+}
+
+.mountains {
+  background: url("./mountains.svg") no-repeat;
+  background-size: contain;
+  width: 120%;
+  height: 200px;
+  position: absolute;
+  top: -180px;
+  left: -100px;
+  z-index: -1;
+}
+
 .max-width {
-  max-width: 60rem;
+  max-width: 80rem;
   margin: 0 auto;
 }
 
@@ -13,8 +32,58 @@ body {
   display: flex;
 }
 
+.flex.cols-2 {
+  justify-content: space-between;
+}
+
+.flex-align-end {
+  align-self: flex-end;
+}
+
+.cols-2 > div {
+  flex: 0 1 calc(50% - 1rem);
+}
+
 .center {
   text-align: center;
+}
+.section-title {
+  color: darkslateblue;
+}
+
+.subtitle {
+  color: #474747;
+}
+
+.padding-bottom {
+  padding-bottom: 12rem;
+}
+
+.filter-container {
+  margin-top: 3rem;
+  align-items: center;
+}
+
+.filter-button {
+  background: #d3e1ed;
+  border: none;
+  padding: 0.5rem 0.75rem;
+  font-size: 13px;
+  color: #434a52;
+  cursor: pointer;
+  margin-right: 0.5rem;
+  border-bottom: 2px solid #d3e1ed;
+  transition: all 0.2s ease-in-out;
+}
+
+.filter-button:hover {
+  border-bottom: 2px solid #8fa9c7;
+}
+
+.filter-button.active {
+  background: none;
+  border-bottom: 2px solid #8fa9c7;
+  font-weight: 700;
 }
 
 .legends {
@@ -43,4 +112,8 @@ body {
 .chart {
   max-width: 30rem;
   margin: 0 auto;
+}
+
+.alabama-section {
+  margin-top: 5rem;
 }
